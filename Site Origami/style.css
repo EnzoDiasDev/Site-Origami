@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(80deg, #3debb0 1%, #8956f3 99%);
+    background-repeat: no-repeat;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cabeçalho-img {
+    height: 8%;
+    width: 8%;
+    padding: 5px;
+}
+
+.lista-item {
+    display: inline-block;
+    padding: 10px;
+    font-size: 25px;
+    padding: 30px;
+}
+
+.titulo-origami {
+    text-align: center;
+    font-size: 30px;
+}
+
+.content {
+    height: 520px;
+    margin-top: 150px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navegation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #000000;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: black;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+    
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
+
+.quebra {
+    height: 2px;
+    background-color: #000000;
+    border: none;
+}
+
+.titulo-nos {
+    margin-top: 600px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.merc {
+    text-align: center;
+}
+
+.tamanho-img {
+    width: 200px;
+    height: 200px;
+}
+
+.merc-todos {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-img {
+    height: 8%;
+    width: 8%;
+    padding: 5px;
+}
+
+.nomes {
+    border: solid 2px #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
